@@ -9,8 +9,7 @@ fn main() -> Result<(), std::io::Error> {
     let host_root = &args[1].trim_end_matches("/");
     println!("Breakout prelude");
     prelude(host_root)?;
-    println!("procfs breakout");
-    println!("{:?}", procfs_breakout(host_root));
+    println!("procfs breakout: {:?}", procfs_breakout(host_root));
 
     Ok(())
 }
